@@ -22,7 +22,7 @@ export default Ember.Route.extend({
         type: "PUT",
         data: classroom,
         success: function(data) {
-          console.log("save successful", data);
+          console.log("Update successful", data);
           self.transitionTo('classrooms');
         }
       })
