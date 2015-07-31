@@ -6,6 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('classrooms', function() {
+    this.route('edit', {path: ":classroom_id/edit"});
+  });
 });
 
 export default Router;

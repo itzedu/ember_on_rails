@@ -18,6 +18,23 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
-
+  app.import('bower_components/jquery/dist/jquery.min.js');
+  app.import('bower_components/materialize/dist/font/roboto/Roboto-Regular.woff', {
+    destDir: '/font/roboto/'
+  });
+  app.import('bower_components/materialize/dist/font/roboto/Roboto-Light.woff', {
+    destDir: '/font/roboto/'
+  });
+  app.import('bower_components/materialize/dist/font/roboto/Roboto-Medium.woff', {
+    destDir: '/font/roboto/'
+  });
+  app.import('bower_components/materialize/dist/font/material-design-icons/Material-Design-Icons.woff', {
+    destDir: '/font/material-design-icons/'
+  });
+  app.import('bower_components/materialize/dist/font/material-design-icons/Material-Design-Icons.woff2', {
+    destDir: '/font/material-design-icons/'
+  });
+  app.import('bower_components/materialize/dist/css/materialize.min.css');
+  app.import('bower_components/materialize/dist/js/materialize.min.js');
   return app.toTree();
 };
