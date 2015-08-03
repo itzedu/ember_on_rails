@@ -7,7 +7,7 @@
       <button {{action 'addClassroom'}}>Add</button>
     </div>
     {{#each model as |classroom|}}
-      <p>{{classroom.name}}</p>
+      <p>{{#link-to "classrooms.classroom" classroom.id}}{{classroom.name}}{{/link-to}}</p>
       {{#link-to "classrooms.edit" classroom.id tagName="button"}}Edit{{/link-to}}
       <button {{action 'deleteClassroom' classroom}}>Delete</button>
     {{/each}}

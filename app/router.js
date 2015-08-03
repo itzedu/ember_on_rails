@@ -8,6 +8,9 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('classrooms', function() {
     this.route('edit', {path: ":classroom_id/edit"});
+    this.route('classroom', {path: ":classroom_id"}, function() {
+      this.route('students');
+    });
   });
 });
 
